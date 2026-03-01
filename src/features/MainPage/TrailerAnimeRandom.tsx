@@ -1,9 +1,8 @@
-import { FaPlay } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import trailer from "../../assets/arise.mp4";
+import { FaPlay } from 'react-icons/fa';
+import trailer from '../../assets/arise.mp4'
 import { useState } from "react";
-import { IoMdVolumeHigh, IoMdVolumeOff } from "react-icons/io";
-import maxresdefault from "../../assets/maxresdefault.jpg";
+import { Link } from 'react-router-dom';
+import { IoMdVolumeHigh, IoMdVolumeOff } from 'react-icons/io';
 
 const TrailerAnimeRandom = () => {
   const [muted, setMuted] = useState(true);
