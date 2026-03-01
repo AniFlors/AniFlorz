@@ -1,3 +1,4 @@
+
 import { FaPlay } from 'react-icons/fa';
 import trailer from '../../assets/arise.mp4'
 import { useState } from "react";
@@ -13,20 +14,21 @@ const TrailerAnimeRandom = () => {
   return (
     <>
       <div className="w-full bg-cover z-[-10]">
-       <video
+
+        <video
           className="rounded-3xl bottom-14 relative z-[0] w-full h-full bg-custom-gradient brightness-50 [radial-gradient(circle,_rgba(0,_0,_0,_0.235)_0%,_rgba(0,_0,_0,_0.477)_28%,_rgba(0,_0,_0,_0.678)_62%,_rgba(0,_0,_0,_0.863)_87%),_linear-gradient(0deg,_#000,_transparent_40%)]"
           src={trailer}
           autoPlay
           loop
           muted={muted}
-        /> 
+        />
         <div className="absolute inset-0 rounded-3xl custom-overlay"></div>
       </div>
 
       <div className="">
         <div className="absolute top-96 ml-12">
           <div className="">
-            <h1 className="text-7xl font-medium mb-4">Добро пожаловать!</h1>
+            <h1 className="text-7xl font-medium mb-4">Поднятие уровня в одиночку 2</h1>
             <p className="mb-3 text-neutral-200 text-xl">
               Новый дизайн, адаптив на телефоны, крутые частые обновления и многое
               другое уже ждут вас на моем сайте! Присаживаетесь, ложитесь
@@ -36,7 +38,7 @@ const TrailerAnimeRandom = () => {
             </p>
           </div>
           <div className="flex gap-3">
-             <button className="bg-zinc-100 hover:bg-zinc-300 text-black font-bold text-sm py-3 px-6 rounded-full flex duration-200">
+            <button className="bg-zinc-100 hover:bg-zinc-300 text-black font-bold text-sm py-3 px-6 rounded-full flex duration-200">
               <FaPlay className="mt-1 mr-3 text-xs" />
               <Link
                 to={
@@ -54,7 +56,7 @@ const TrailerAnimeRandom = () => {
               >
                 Подробнее
               </Link>
-            </button> */}
+            </button>
             <div className="bg-neutral-800 rounded-full flex p-1 opacity-70 hover:scale-110 duration-200">
               <button onClick={toggleMuted} className="text-4xl">
                 {muted ? (
@@ -70,5 +72,7 @@ const TrailerAnimeRandom = () => {
     </>
   );
 };
+
+export default TrailerAnimeRandom;
 
 export default TrailerAnimeRandom;
